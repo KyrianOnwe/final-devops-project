@@ -35,4 +35,17 @@ spec:
     ports:
         - port: 80 #cluster port
           targetPort: 8080 #container image port
+---
+
+kind: Pod
+apiVersion: v1
+metadata:
+    name: abctechnologies-pod
+    namespace: default
+    labels:
+         role: abc-tech-app
+spec:
+    containers:
+         -image: drkyrianonwe/abctechnologies:docker_tag
+name: app
 ...
