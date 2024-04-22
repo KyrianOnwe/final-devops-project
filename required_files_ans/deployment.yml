@@ -20,7 +20,7 @@ spec:
                 app: abc-tech-app
         spec:
             containers:
-                - image: salvathshaik/abctechnologies
+                - image: drkyrianonwe/abctechnologies
                   name: app
 ---
 
